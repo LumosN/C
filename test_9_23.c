@@ -1,11 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<assert.h>
-void my_strcpy(char* dest, const char* src)
+char* my_strcpy(char* dest, const char* src)
 {
 	assert(dest != NULL);
 	assert(src != NULL);
-	while (*dest++ = *src++)//'\0'µÄASCllÂëÖµÊÇ0
+	while (*dest++ = *src++)//'\0'çš„ASCllç å€¼æ˜¯0
 	{
 		;
 	}
@@ -14,9 +14,8 @@ int main()
 {
 	char arr1[20] = { 0 };
 	char arr2[20] = { 0 };
-	printf("ÊäÈë×Ö·û´®\n");
+	printf("è¾“å…¥å­—ç¬¦ä¸²\n");
 	scanf("%s", arr1);
-	my_strcpy(arr2, arr1);//°Ñarr1ÖĞµÄ×Ö·û´®copyµ½arr2ÖĞ
-	printf("%s", arr2);
+	printf("%s", my_strcpy(arr2, arr1));//æŠŠarr1ä¸­çš„å­—ç¬¦ä¸²copyåˆ°arr2ä¸­
 	return 0;
 }

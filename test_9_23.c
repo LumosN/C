@@ -18,6 +18,6 @@ int main()
 	char arr2[20] = { 0 };
 	printf("输入字符串\n");
 	scanf("%s", &arr1);
-	printf("%s", my_strcpy(arr2, arr1));//把arr1中的字符串copy到arr2中  
+	printf("%s", my_strcpy(arr2, arr1));//把arr1中的字符串copy到arr2中    
 	return 0;
 }

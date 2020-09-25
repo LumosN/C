@@ -12,7 +12,7 @@ int check_sys()
 }
 int main()
 {
-	if (check_sys()) printf("Ğ¡¶Ë\n");
-	else printf("´ó¶Ë\n");
+	if (check_sys()) printf("å°ç«¯\n");
+	else printf("å¤§ç«¯\n");
 	return 0;
 }
